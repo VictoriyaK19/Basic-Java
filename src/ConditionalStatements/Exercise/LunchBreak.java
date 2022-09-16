@@ -15,14 +15,14 @@ public class LunchBreak {
         double restTime = rest - lunchTime - relaxTime;
 
         double free = Math.abs(restTime - episode);
-
+        free = Math.ceil(free);
 
         if (restTime >= episode) {
             System.out.printf("You have enough time to watch %s " +
-                              "and left with %d minutes free time.", series, Math.round(free));
+                              "and left with " + Math.round(free) + " minutes free time.", series);
         } else {
             System.out.printf("You don't have enough time to watch %s, " +
-                              "you need %d more minutes.", series, Math.round(free));
+                              "you need " + Math.round(free) + " more minutes.", series);
         }
 
 
