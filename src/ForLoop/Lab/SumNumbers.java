@@ -11,8 +11,7 @@ public class SumNumbers {
         int sum = 0;
 
         for (int i = 0; i < count; i++) {
-            Scanner scanner2 = new Scanner(System.in);
-            int num = Integer.parseInt(scanner2.nextLine());
+            int num = Integer.parseInt(scanner.nextLine());
 
             sum += num;
         }
