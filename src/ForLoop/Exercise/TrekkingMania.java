@@ -33,7 +33,6 @@ public class TrekkingMania {
         }
 
         total = musala + monbal + kilimandjaro + k2 + everest;
-        String symbol = "%";
 
         System.out.printf("%.2f%%%n", (double) musala / total * 100);
         System.out.printf("%.2f%%%n", (double) monbal / total * 100);
