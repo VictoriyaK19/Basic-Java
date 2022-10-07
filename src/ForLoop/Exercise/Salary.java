@@ -36,7 +36,8 @@ public class Salary {
         if (salary <= 0) {
             System.out.println("You have lost your salary.");
         } else {
-            System.out.printf("%.0f", salary);
+
+            System.out.println((int) salary);
         }
 
     }
