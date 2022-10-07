@@ -7,28 +7,20 @@ public class Salary {
         Scanner scanner = new Scanner(System.in);
 
         int tabs = Integer.parseInt(scanner.nextLine());
-        double salary = Double.parseDouble(scanner.nextLine());
-        double fine = 0;
+        int salary = Integer.parseInt(scanner.nextLine());
 
-        for (int i = 1; i <= tabs ; i++) {
+        for (int i = 0; i < tabs ; i++) {
             String website = scanner.nextLine();
-
-            if (salary <=0) {
-                break;
-            }
 
             switch (website) {
                 case "Facebook":
-                    fine += 150;
-                    salary -= fine;
+                    salary -= 150;
                     break;
                 case "Instagram":
-                    fine += 100;
-                    salary -= fine;
+                    salary -= 100;
                     break;
                 case "Reddit":
-                    fine += 50;
-                    salary -= fine;
+                    salary -= 50;
                     break;
             }
         }
@@ -36,8 +28,7 @@ public class Salary {
         if (salary <= 0) {
             System.out.println("You have lost your salary.");
         } else {
-
-            System.out.println((int) salary);
+            System.out.println(salary);
         }
 
     }
