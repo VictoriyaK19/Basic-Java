@@ -9,11 +9,10 @@ public class ReadText {
         String command = "";
 
         while (!command.equals("Stop")) {
-            String string = scanner.nextLine();
-            command = string;
-            if (!string.equals("Stop")) {
-                System.out.println(command);
-            }
+
+            System.out.println(command);
+
+            command = scanner.nextLine();
 
         }
 
