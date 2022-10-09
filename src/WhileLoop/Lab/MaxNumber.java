@@ -18,7 +18,6 @@ public class MaxNumber {
 
             command = scanner.nextLine();
         }
-
         System.out.println(maxNum);
     }
 }
