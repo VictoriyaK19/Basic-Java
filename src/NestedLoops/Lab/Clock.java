@@ -3,9 +3,9 @@ package NestedLoops.Lab;
 public class Clock {
     public static void main(String[] args) {
 
-        for (int i = 0; i < 24; i++) {
-            for (int j = 0; j < 60; j++) {
-                System.out.printf("%d:%d%n", i, j);
+        for (int h = 0; h < 24; h++) {
+            for (int m = 0; m < 60; m++) {
+                System.out.printf("%d:%d%n", h, m);
             }
         }
 
